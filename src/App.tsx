@@ -5,7 +5,7 @@ export function App() {
 
   return (
     <div>
-      Iniciando
+      <div className={styles.container}>Iniciando</div>
     </div>
   )
 }
