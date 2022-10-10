@@ -1,0 +1,23 @@
+.listTasks {
+    margin-top: 4rem;
+}
+
+.listTasks__topo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.listTasks__criadas {
+    font-size: 0.875rem;
+    color: var(--blue-300);
+}
+
+.listTasks__concluidas {
+    font-size: 0.875rem;
+    color: var(--purple-300);
+}
+
+.listTasks__list {
+    list-style: none;
+}

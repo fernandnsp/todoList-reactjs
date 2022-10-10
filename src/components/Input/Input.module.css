@@ -41,5 +41,6 @@
 
 .button:focus, .button:hover {
     outline: transparent;
+    cursor: pointer;
     background-color: var(--blue-300);
 }

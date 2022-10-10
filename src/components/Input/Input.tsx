@@ -1,5 +1,4 @@
 import { PlusCircle } from "phosphor-react"
-
 import style from './Input.module.css'
 
 export function Input() {
