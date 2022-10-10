@@ -10,9 +10,8 @@ export function ListTasks() {
             </div>
             
             <ul className={style.listTasks__list}>
-                <li>
-                    <Tasks />
-                </li>
+                <li><Tasks /></li>
+                <li><Tasks /></li>
             </ul>
         </section>
     )

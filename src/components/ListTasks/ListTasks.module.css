@@ -21,3 +21,7 @@
 .listTasks__list {
     list-style: none;
 }
+
+.listTasks__list li{
+    margin-bottom: 1rem;
+}

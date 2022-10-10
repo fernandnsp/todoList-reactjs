@@ -1,12 +1,15 @@
 .input {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     gap: 8px;
     margin-top: calc(0px - 1.7rem);
 }
 
 .inputCampo {
     color: var(--gray-100);
-    width: 100%;
+
+    width: calc(100% - 8px - 90px);
     padding: 1rem;
 
     border-radius: 8px;
@@ -27,9 +30,11 @@
 .button {
     color: var(--gray-100);
     display: flex;
-    gap: 8px;
     align-items: center;
+    justify-content: center;
+    gap: 8px;
 
+    width: 90px;
     padding: 1rem;
     border: none;
     border-radius: 8px;
@@ -37,10 +42,17 @@
     font-weight: 700;
     font-size: 0.875rem;
     background-color: var(--blue-600);
+    transition: ease-in .08s;
 }
 
 .button:focus, .button:hover {
     outline: transparent;
     cursor: pointer;
     background-color: var(--blue-300);
+}
+
+@media (max-width: 375px) {
+    .inputCampo {
+        width: 100%;
+    }
 }

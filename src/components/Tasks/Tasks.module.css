@@ -9,17 +9,18 @@
     border: 1px solid var(--gray-400);
 
     background-color: var(--gray-500);
+    flex-direction: row;
 }
 
 .radioIcon {
     color: var(--blue-300);
     box-sizing: content-box;
     padding: 5px;
+    transition: ease-in .08s;
 }
 
 .radioIcon:hover {
     color: var(--blue-600);
-    overflow: hidden;
     cursor: pointer;
 }
 
@@ -30,14 +31,25 @@
 }
 
 .trashIcon {
+    display: flex;
     color: var(--gray-300);
+
     border-radius: 4px;
-    box-sizing: content-box;
     padding: 5px;
+    transition: ease-in .08s;
 }
 
 .trashIcon:hover {
     color: var(--danger);
     cursor: pointer;
     background-color: var(--gray-400);
+}
+
+@media (max-width: 768px) {
+    .radioIcon {
+        order: 1;
+    }
+    .trashIcon {
+        order: 0;
+    }
 }
