@@ -1,15 +1,14 @@
 .tasks {
     color: var(--gray-100);
-    display: flex;
+    display: grid;
     align-items: flex-start;
-    gap: 8px;
+    grid-template-columns: auto 1fr auto;
 
     padding: 1rem;
     border-radius: 8px;
     border: 1px solid var(--gray-400);
 
     background-color: var(--gray-500);
-    flex-direction: row;
 }
 
 .radioIcon {
@@ -24,10 +23,24 @@
     cursor: pointer;
 }
 
+.radioIconChecked {
+    color: var(--purple-600);
+    position: relative;
+}
+
+.radioIconChecked:hover {
+    color: var(--purple-300);
+}
+
 .content {
     font-size: 0.875rem;
     box-sizing: content-box;
     padding: 5px;
+}
+
+.contentDone {
+    color: var(--gray-300);
+    text-decoration: line-through;
 }
 
 .trashIcon {

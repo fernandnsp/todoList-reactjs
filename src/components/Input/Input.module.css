@@ -13,7 +13,10 @@
     padding: 1rem;
 
     border-radius: 8px;
+    border: none;
     border: 1px solid var(--gray-700);
+
+    font-size: 0.875rem;
     background-color: var(--gray-500);
 }
 
@@ -43,6 +46,15 @@
     font-size: 0.875rem;
     background-color: var(--blue-600);
     transition: ease-in .08s;
+}
+
+.button:disabled {
+    background: var(--gray-300);
+}
+
+.button:disabled:hover {
+    background: var(--gray-300);
+    cursor: default;
 }
 
 .button:focus, .button:hover {

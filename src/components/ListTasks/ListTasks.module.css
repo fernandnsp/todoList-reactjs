@@ -18,10 +18,32 @@
     color: var(--purple-300);
 }
 
+.withoutTasks {
+    color: var(--gray-300);
+    padding-top: 3.5rem;
+    border-top: 1px solid var(--gray-400);
+    border-radius: 8px;
+
+    text-align: center;
+    line-height: 140%;
+}
+
+.withoutTasks__icon {
+    margin-bottom: 0.875rem;
+}
+
 .listTasks__list {
     list-style: none;
 }
 
 .listTasks__list li{
     margin-bottom: 1rem;
+}
+
+.slug {
+    color: var(--gray-200);
+    padding: 2px 8px;
+    border-radius: 24px;
+    font-size: 0.75rem;
+    background-color: var(--gray-400);
 }

@@ -1,5 +1,4 @@
 import { Header } from './components/Header/Header'
-import { Input } from './components/Input/Input'
 import { ListTasks } from './components/ListTasks/ListTasks'
 
 import './assets/css/global.css'
@@ -11,7 +10,6 @@ export function App() {
       <Header />
 
       <main className={styles.container}>
-        <Input />
         <ListTasks />
       </main>
     </div>
